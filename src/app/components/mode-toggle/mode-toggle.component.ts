@@ -14,14 +14,13 @@ export class ModeToggleComponent {
 
   changeThemeColor() {
     const body = document.getElementsByTagName('body')[0];
+    this.isThemeDark = !this.isThemeDark;
+    this.changeThemeColorEvent.emit(this.isThemeDark);
 
     if (body.classList.contains('dark-theme')) {
       body.classList.remove('dark-theme');
-      this.isThemeDark = false;
     } else {
       body.classList.add('dark-theme');
-      this.isThemeDark = true;
     }
-    return this.changeThemeColorEvent.emit(this.isThemeDark);
   }
 }
