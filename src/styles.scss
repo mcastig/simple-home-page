@@ -12,7 +12,7 @@ body {
 
 /* Dark Theme */
 .dark-theme {
-  background-color: #223344;
+  background-color: #111729;
   color: #FFFFFF;
 
   .navbar-nav .nav-link {
@@ -21,5 +21,17 @@ body {
 
   .navbar-nav .nav-link.active {
     font-weight: bold;
+  }
+
+  .home-page-container {
+    color: #FFFFFF !important;
+
+    .body-text {
+      color: #FFFFFF !important;
+    }
+
+    .benefits-list {
+      color: #FFFFFF !important;
+    }
   }
 }
