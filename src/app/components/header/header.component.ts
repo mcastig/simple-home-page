@@ -9,7 +9,7 @@ import { ModeToggleComponent } from "../mode-toggle/mode-toggle.component";
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  isDarkTheme: any;
+  isDarkTheme: boolean = false;
 
   changeColorTheme($event: boolean) {
     this.isDarkTheme = $event;

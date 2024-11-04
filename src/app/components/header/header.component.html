@@ -3,11 +3,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          @if(isDarkTheme) {
-            <img src="/assets/images/alarado-icon-homepage-dark.svg" />
-          } @else {
-            <img src="/assets/images/alarado-icon-homepage.svg" />
-          }
+          <img [src]="isDarkTheme ? '/assets/images/alarado-icon-homepage-dark.svg' : '/assets/images/alarado-icon-homepage.svg'" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
