@@ -1,9 +1,10 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-mode-toggle',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './mode-toggle.component.html',
   styleUrl: './mode-toggle.component.scss'
 })

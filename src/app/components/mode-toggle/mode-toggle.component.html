@@ -1,13 +1,6 @@
 <div class="mode-toggle" (click)="changeThemeColor()">
-  @if (!isThemeDark) {
-    <div class="theme-icons-light">
-      <img class="moon-icon" src="/assets/images/moon-fill-light.svg" alt="moon-fill"/>
-      <img class="sun-icon" src="/assets/images/sun-fill.svg" alt="sun-fill"/>
-    </div>
-  } @else {
-    <div class="theme-icons-dark">
-      <img class="moon-icon" src="/assets/images/moon-fill.svg" alt="moon-fill"/>
-      <img class="sun-icon" src="/assets/images/sun-fill-light.svg" alt="sun-fill"/>
-    </div>
-  }
+  <div [ngClass]="{'theme-icons-light': !isThemeDark, 'theme-icons-dark': isThemeDark}">
+    <img class="moon-icon" [src]="isThemeDark ? '/assets/images/moon-fill.svg' : '/assets/images/moon-fill-light.svg'" alt="moon-fill">
+    <img class="sun-icon" [src]="isThemeDark ? '/assets/images/sun-fill-light.svg' : '/assets/images/sun-fill.svg'" alt="sun-fill">
+  </div>
 </div>
