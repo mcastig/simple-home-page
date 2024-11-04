@@ -1,0 +1,32 @@
+.mode-toggle {
+  .theme-icons-light {
+    background-color: #111729;
+    border-radius: 20px;
+
+    .sun-icon {
+      border-radius: 20px;
+      border: 2px solid #111729;
+      background-color: #F2F9FE;
+    }
+
+    .moon-icon {
+      border-radius: 20px;
+      background-color: #111729;
+    }
+  }
+  .theme-icons-dark {
+    background-color: #111729;
+    border-radius: 20px;
+
+    .sun-icon {
+      border-radius: 20px;
+      background-color: #111729;
+    }
+
+    .moon-icon {
+      border-radius: 20px;
+      border: 2px solid #111729;
+      background-color: #F2F9FE;
+    }
+  }
+}
