@@ -1,6 +1,6 @@
 <div class="mode-toggle" (click)="changeThemeColor()">
   <div [ngClass]="{'theme-icons-light': !isThemeDark, 'theme-icons-dark': isThemeDark}">
-    <img class="moon-icon" [src]="isThemeDark ? '/assets/images/moon-fill.svg' : '/assets/images/moon-fill-light.svg'" alt="moon-fill">
-    <img class="sun-icon" [src]="isThemeDark ? '/assets/images/sun-fill-light.svg' : '/assets/images/sun-fill.svg'" alt="sun-fill">
+    <img class="moon-icon" [src]="isThemeDark ? 'assets/images/moon-fill.svg' : 'assets/images/moon-fill-light.svg'" alt="moon-fill">
+    <img class="sun-icon" [src]="isThemeDark ? 'assets/images/sun-fill-light.svg' : 'assets/images/sun-fill.svg'" alt="sun-fill">
   </div>
 </div>
