@@ -13,9 +13,9 @@ export class ModeToggleComponent {
   isThemeDark = false;
 
   changeThemeColor() {
-    const body = document.getElementsByTagName('body')[0];
     this.isThemeDark = !this.isThemeDark;
     this.changeThemeColorEvent.emit(this.isThemeDark);
+    const body = document.getElementsByTagName('body')[0];
 
     if (body.classList.contains('dark-theme')) {
       body.classList.remove('dark-theme');

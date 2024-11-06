@@ -1,12 +1,53 @@
 .header-container {
   font-size: 16px;
   font-weight: 600;
+
+  .navbar-nav .nav-link.active {
+    color: #2A4DD0;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus {
+    box-shadow: none;
+    border: 0;
+  }
+
+  .dark-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .light-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(17,23,41)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .toggle-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .righ-side-toggle {
-    display: flex;
+    display: none;
     justify-content: center;
+    text-align: center;
+    font-size: 36px;
     width: 100%;
+  }
+
+  .header-container a {
+    font-size: 34px;
+  }
+
+  .toggle-mobile {
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .offcanvas-header {
+    display: block;
+    font-size: 34px;
+    text-align: right
   }
 }
